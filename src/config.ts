@@ -33,7 +33,22 @@ export const defaultConfig: AppConfigType = {
 			'pre',
 			'textarea',
 		],
-		translatableAttributes: ['title', 'alt', 'placeholder', 'label', 'aria-label'],
+		translatableAttributes: [
+			'title',
+			'alt',
+			'placeholder',
+			'label',
+			'aria-label',
+			'aria-braillelabel',
+			'aria-brailleroledescription',
+			'aria-colindextext',
+			'aria-description',
+			'aria-label',
+			'aria-placeholder',
+			'aria-roledescription',
+			'aria-rowindextext',
+			'aria-valuetext'
+		],
 		// Temporary solution to fix UX due to bug https://github.com/translate-tools/linguist/issues/75
 		lazyTranslate: isMobileBrowser() ? false : true,
 		detectLanguageByContent: true,
